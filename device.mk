@@ -77,10 +77,7 @@ PRODUCT_PACKAGES += \
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider-V1-ndk.vendor
-
-# Remove unwanted packages
-PRODUCT_PACKAGES += \
-    removepackages
+      GCamGOPrebuilt-V2
 
 
 # Remove unwanted packages
