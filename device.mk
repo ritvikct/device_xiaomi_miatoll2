@@ -78,6 +78,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider-V1-ndk.vendor
 
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    removepackages
+
+
 PRODUCT_PACKAGES += \
     libMegviiFacepp-0.5.2 \
     libmegface \
