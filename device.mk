@@ -98,7 +98,7 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    android.hardware.camera.provider-V1-ndk.vendor
+    android.hardware.camera.provider-V1-ndk.vendor \
       GCamGOPrebuilt-V2
 
 
