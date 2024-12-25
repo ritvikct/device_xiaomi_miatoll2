@@ -22,6 +22,28 @@ PRODUCT_PACKAGES += \
     AntHalService-Soong \
     com.dsi.ant@1.0.vendor
 
+# ART
+PRODUCT_DEX_PREOPT_BOOT_IMAGE_PROFILE_LOCATION := frameworks/base/config/boot-image-profile.txt
+PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
+PRODUCT_USE_PROFILE_FOR_BOOT_IMAGE := true
+DONT_DEXPREOPT_PREBUILTS := true
+PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
+PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
+USE_DEX2OAT_DEBUG := false
+WITH_DEXPREOPT_DEBUG_INFO := false
+PRODUCT_ALWAYS_PREOPT_EXTRACTED_APK := true
+
+# APEX
+OVERRIDE_TARGET_FLATTEN_APEX := true
+#$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+
+# Speed up
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    Launcher3QuickStep \
+    Settings \
+    SystemUI \
+    NexusLauncherRelease
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@2.0-impl \
