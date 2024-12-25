@@ -129,9 +129,6 @@ BOARD_KERNEL_CMDLINE += swiotlb=1
 # OTA assert
 TARGET_OTA_ASSERT_DEVICE := curtana,excalibur,gram,joyeuse,miatoll
 
-# Lineage Health
-TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS := false
-
 # Memtrack
 TARGET_DISABLE_MEMTRACK := true
 
