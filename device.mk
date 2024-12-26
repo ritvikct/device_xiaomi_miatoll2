@@ -105,6 +105,10 @@ PRODUCT_PACKAGES += \
     libmegface \
     libpiex_shim
 
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 PRODUCT_PACKAGES += \
     libcamera2ndk_vendor \
     libdng_sdk.vendor \
