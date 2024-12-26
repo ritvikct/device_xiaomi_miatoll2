@@ -88,7 +88,7 @@ function blob_fixup() {
         vendor/lib64/libdlbdsservice.so | vendor/lib64/libstagefright_soft_ac4dec.so | vendor/lib64/libstagefrightdolby.so)
             "${PATCHELF}" --replace-needed "libstagefright_foundation.so" "libstagefright_foundation-v33.so" "${2}"
             ;;
-        # Miui Camera
+            # Miui Camera
         system/priv-app/MiuiCamera/MiuiCamera.apk)
             split --bytes=49M -d "$2" "$2".part
             ;;
