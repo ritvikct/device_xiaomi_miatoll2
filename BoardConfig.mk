@@ -132,6 +132,9 @@ TARGET_OTA_ASSERT_DEVICE := curtana,excalibur,gram,joyeuse,miatoll
 # Memtrack
 TARGET_DISABLE_MEMTRACK := true
 
+# MIUI_CAMERA
+-include vendor/xiaomi/miuicamera/BoardConfigMiuiCamera.mk
+
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 134217728
 BOARD_CACHEIMAGE_PARTITION_SIZE := 402653184
